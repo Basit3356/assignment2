@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="movie-list"></ion-back-button>
+
+    </ion-buttons>
+
+    <ion-title>Movies</ion-title>
+
+    <ion-button slot="end" (click)="deletemovies()">
+      <ion-icon name="trash"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+        <ion-img src="myimg.jpg">
+          </ion-img>
+      <ion-label position="floating"><b>NAME</b></ion-label>
+
+      <ion-card-title>{{ singlemovie?.name }}</ion-card-title>
+
+    </ion-card-header>
+
+
+    <ion-label position="floating"> <b> Catagory </b> </ion-label>
+
+    {{singlemovie?.Catagory}}
+    <br>
+
+    <ion-card-content>
+
+      <ion-label position="floating"> <b> Release Year </b> </ion-label>
+
+      {{singlemovie?.Release}}
+      <br>
+
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
